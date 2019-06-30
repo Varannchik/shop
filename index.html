@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input_wrap">
+            <label for="">Выберите название товара</label>
+            <select name="name" id="select">
+                <option>Молоко</option>
+                <option>Хлеб</option>
+                <option>Сыр</option>
+                <option>Изюм</option>
+                <option>Яйца</option>
+                <option>Огурцы</option>
+            </select>
+        </div>
+        <div class="input_wrap">
+            <label for="">Введите количество</label>
+            <input type="number" class="count">
+        </div>
+        <button>ok</button>
+        <div class="input_wrap">
+            <label for="">Стоимость 1 единицы товара</label>
+            <input type="text" class="price">
+        </div>
+        <div class="input_wrap">
+            <span>Общая стоимость:</span>
+            <span class="allPrice"></span>
+        </div>
+        <span>Осталось в магазине:</span> <span class="ostatok"></span>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
