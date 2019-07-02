@@ -12,7 +12,7 @@ function Prod(name,price,total){
     const self=this;
     btn.addEventListener('click', function() {
         this.name=document.querySelector('#select').value;
-        this.count=document.querySelector('.count').value;                            
+        this.count=document.querySelector('.count').value;                                    
         if(this.name==self.name){
             pr.value=self.price;
             let b=self.total-this.count;                        
@@ -26,12 +26,13 @@ function Prod(name,price,total){
             allPrice.innerHTML=self.price*this.count+' '+'$';           
         } 
     });
-    sale.addEventListener('click',function Sale(){
-        self.total=self.total-self.count;            
+    sale.addEventListener('click',function(){        
+        self.total=self.total-self.count;
+        console.log(self.total);            
     });
-    add.addEventListener('click',function(){
-        this.count_add=document.querySelector('.count_add').value;
-        self.total=self.total-self.count+this.count_add;       
+    add.addEventListener('click',function(){        
+        let count_add=document.querySelector('.count_add').value;
+        self.total=self.total-self.count + count_add;               
     });    
 }
 
