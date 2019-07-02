@@ -1,4 +1,27 @@
 .input_wrap {
   margin: 20px 0;
 }
+
+.add {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.sale {
+  display: block;
+  margin: 20px 0;
+}
+
+.ostatok {
+  display: block;
+  margin: 20px 0;
+}
+
+.count_add {
+  display: inline;
+}
+
+button {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
